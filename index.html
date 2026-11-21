@@ -190,6 +190,50 @@
       color: #052e16;
     }
 
+    .signatures {
+      background: var(--card-bg);
+      border: 1.5px solid rgba(135, 216, 247, 0.3);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .signatures-title {
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--lazio-sky);
+    }
+
+    .chip-stack {
+      width: 100%;
+      max-width: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .chip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 9px 16px;
+      border-radius: 999px;
+      background: rgba(135, 216, 247, 0.13);
+      border: 1px solid rgba(135, 216, 247, 0.4);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
     footer {
       text-align: center;
       font-size: 0.85rem;
@@ -227,7 +271,7 @@
           </div>
           <button class="copy-btn" onclick="copyCode('code-100', this)">Copia</button>
         </div>
-        <div class="pin-line">PIN: <strong>In privato che l'internet è pieno de stronzi</strong></div>
+        <div class="pin-line">PIN: <strong>INSERISCI_PIN_100</strong></div>
       </article>
 
       <!-- BUONO 2: 50€ -->
@@ -243,8 +287,22 @@
           </div>
           <button class="copy-btn" onclick="copyCode('code-50', this)">Copia</button>
         </div>
-        <div class="pin-line">PIN: <strong>Come sopra</strong></div>
+        <div class="pin-line">PIN: <strong>INSERISCI_PIN_50</strong></div>
       </article>
+    </section>
+
+    <section class="signatures" aria-label="Firme degli autori">
+      <div class="signatures-title">Con affetto da</div>
+      <div class="chip-stack">
+        <span class="chip">Alessia</span>
+        <span class="chip">Anna</span>
+        <span class="chip">Claudia</span>
+        <span class="chip">Leo</span>
+        <span class="chip">Mirko</span>
+        <span class="chip">Rich</span>
+        <span class="chip">Simone C</span>
+        <span class="chip">Simone D</span>
+      </div>
     </section>
 
     <footer>
